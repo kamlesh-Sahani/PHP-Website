@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smooth Animated Div</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.animated-div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+  </style>
+  <script>
+    window.addEventListener('load', function() {
+  var div = document.querySelector('.animated-div');
+  div.style.animationPlayState = 'running';
+});
+
+window.addEventListener('beforeunload', function() {
+  var div = document.querySelector('.animated-div');
+  div.style.animation = 'none';
+});
+
+  </script>
+</head>
+<body>
+  <div class="animated-div"></div>
+</body>
+</html>

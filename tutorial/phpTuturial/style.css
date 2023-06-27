@@ -1,0 +1,81 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ebebebc2;
+    overflow-x: hidden;
+}
+
+.mainContent {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.mainContent  .slider {
+    width: 30%;
+    background-color: red;
+}
+
+.mainContent  .content {
+    width: 70%;
+    
+}
+
+.mainContent .content .defination h4 {
+    font-size: 20px;
+    font-weight:50;
+    word-spacing: 5px;
+    line-height: 34px;
+    color: rgb(21, 21, 21);
+
+}
+.mainContent .content .defination h4 ol li{
+    margin-bottom: 20px;
+}
+.mainContent .content .defination h4 ol li span ,.mainContent .content .defination h4 ul li span{
+    color: rgb(0, 87, 58);
+    font-size: 23px;
+    font-weight: 10px;
+    border-bottom: 2px solid black;
+}
+
+.mainContent .content .defination .codeArea{
+    height: 500px;
+    width:90%;
+    background-color:#05711ba5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.mainContent .content .defination .codeArea #codeArea{
+    width: 90%;
+    height: 80%;
+background-color: #eee;
+    position: absolute;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    text-transform: none;
+    
+}
+.mainContent .content .defination .codeArea span{
+    font-size: 60px;
+    color: black;
+position: absolute;
+right: 10px;
+top: 10px;
+z-index: 100;
+}
+.mainContent .content .defination .codeArea span:hover{
+    color: rgb(22, 141, 64);
+
+}

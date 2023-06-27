@@ -1,0 +1,135 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ebebebc2;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: #F5f5f5;
+    box-shadow: 1px 1px 10px 1px #e2dddd;
+    padding-top: 10px;
+}
+
+.heading {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.heading h2 span {
+    color: rgb(8, 124, 8);
+}
+
+.container .logo {
+    width: 90%;
+    height: 70vh;
+    position: relative;
+
+}
+
+.logo span {
+    font-size: 600px;
+    position: absolute;
+    top: -150px;
+    left: 400px;
+    color: rgb(8, 124, 8);
+    border-radius: 5px;
+}
+
+.about {
+
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+.about .description h4 {
+    color: rgb(9, 54, 9);
+}
+
+.about .intro {
+    margin-top: -19px;
+}
+
+.about .intro h6 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1.1px;
+}
+
+.name {
+    width: 90%;
+    margin: auto;
+}
+
+.name .projects {
+    width: 90%;
+}
+
+.name .projects .code {
+    width: 70%;
+    background-color: rgb(3, 18, 83);
+    margin: auto;
+    border-radius: 4px;
+
+}
+
+.name .projects h4 {
+    font-size: 35px;
+    color: rgb(4, 64, 4);
+}
+
+.name .projects p {
+    font-size: 20px;
+}
+
+.name .projects .code button[id=copy] {
+    margin-left: 93%;
+}
+
+.name .projects .code button span {
+    font-size: 25px;
+}
+
+.name .projects .code pre {
+    color: #eee;
+}
+.para{
+    width: 90%;
+    margin: 90px auto;
+    padding: 20px;
+}
+.para h6{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+  
+}
+.para h6::before{
+    content: '"';
+    font-size: 40px
+}
+.para h6::after{
+    content: '"';
+    font-size: 40px;
+}
+
+textarea {
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+    color: #eee;
+    outline: none;
+    resize: none;
+    border: none;
+    text-transform: lowercase;
+}

@@ -1,0 +1,707 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ebebebc2;
+    overflow-x: hidden;
+}
+
+header nav {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 1px #cfcfcf;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+
+header nav .logo h1 {
+    color: rgb(4, 163, 4);  animation: fade-in 1.1s ease-out forwards;
+}
+header nav .head ul a{
+text-decoration: none;
+color: black;
+}
+
+header nav .head ul {
+    display: flex;
+    list-style: none;
+    margin-top: 25px;
+}
+
+header nav .head ul li {
+    margin: 0px 20px;
+}
+
+header nav button {
+    background-color: rgb(4, 163, 4);
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+header nav .icon i {
+    position: absolute;
+    font-size: 48px;
+    top: 10px;
+    color: rgb(7, 112, 7);
+    border: 1px solid black;
+    display: none;
+}
+
+header nav input[type=checkbox] {
+    display: none;
+}
+
+/*hover-------------------------------*/
+
+
+header nav ul li:hover {
+    border-bottom: 3px solid rgb(4, 163, 4);
+    color: #1d1b1bab;
+}
+
+
+header nav button:hover {
+    background-color: rgba(7, 112, 7, 0.932);
+}
+
+
+
+
+.search {
+    height: 500px;
+    width: 100%;
+    background-color: #F5f5f5;
+    box-shadow: 1px 1px 10px 1px #e2dddd;
+    margin-top: 10px;
+    padding-top: 20px;
+
+
+}
+
+.slogan {
+    width: 80%;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.slogan span {
+    color: rgb(4, 163, 4);
+    animation: fade-in 1.1s ease-out forwards;
+    
+}
+
+.slogan p {
+    letter-spacing: 2px;
+    color: rgb(90, 88, 88);
+}
+
+.search .int {
+    height: 120px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.search .int input {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid rgba(25, 199, 25, 0.884);
+    transition: 0.2s;
+
+}
+
+.search .int input:focus {
+    border: 2px solid rgba(6, 175, 6, 0.932);
+}
+
+.search .int button {
+    height: 55px;
+    width: 70px;
+    background-color: rgb(4, 163, 4);
+    border: none;
+    font-size: 27px;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search .int button:hover {
+    background-color: green;
+}
+
+
+
+
+
+.container-course {
+    width: 100%;
+    background-color: #eee;
+    box-shadow: 1px 1px 10px 1px #e2dddd;
+    display: flex;
+}
+
+.container-course .qoutes {
+    height: 300px;
+    width: 30%;
+    padding: 20px;
+    margin-top: 20px
+}
+
+.container-course .qoutes span {
+    color: rgb(4, 163, 4);
+}
+
+.container-course .qoutes p {
+    letter-spacing: 1.6px;
+}
+
+.container-course .course {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+        animation: fade-in 1.1s ease-out forwards;
+
+}
+
+.container-course .course div {
+    height: 100px;
+    width: 300px;
+    background-color: #ffffffd8;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #bbb9b9;
+   transition: all linear 0.6s;
+    position: relative;
+
+    transition: 0.4s;
+}
+
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+
+
+
+
+.container-course .course div:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px dashed rgb(4, 163, 4);
+}
+
+.container-course .course div .mdi {
+    font-size: 60px;
+    color: rgb(6, 88, 6);
+    margin-left: 10px;
+
+}
+
+.container-course .course div .heading {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.question-bank {
+    height: 1280px;
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 2px;
+    box-shadow: 1px 1px 20px 1px #a7a7a7;
+    margin-top: 10px;
+}
+
+
+.question-bank .heading {
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.question-bank .heading h1 {
+    margin-left: 150px;
+}
+
+.question-bank .heading span {
+    color: rgb(6, 88, 6);
+}
+
+.question-bank .heading p {
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+}
+
+
+.question-bank .card {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question-bank .card .subject {
+
+    width: 45%;
+    background-color: #ffffffd8;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #bbb9b9;
+    transition: 0.4s;
+
+}
+
+.question-bank .card .heading {
+    height: 100px;
+    width: 90%;
+    background-color: #ffffffd8;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #bbb9b9;
+
+}
+
+.question-bank .card .subject .topic {
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question-bank .card .subject .topic div {
+    height: 80px;
+    width: 250px;
+    background-color: #ffffffd8;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #bbb9b9;
+    transition: 0.5s;
+}
+
+.question-bank .card .subject .topic div:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px dashed rgb(4, 163, 4);
+}
+
+.card .subject .heading h1 {
+    padding-top: 20px;
+    color: rgb(6, 88, 6);
+}
+
+.card .subject .topic h3 {
+    color: rgb(16, 148, 16);
+    margin-left: 55px;
+
+}
+
+
+
+
+/*paper*/
+
+
+.paper {
+    width: 99%;
+    height: auto;
+    background-color: #cfcfcf96;
+    margin-top: 10px;
+    box-shadow: 1px 1px 30px 1px rgb(80, 82, 80);
+    padding: 10px;
+}
+
+.paper .heading {
+    margin-left: 30%;
+}
+
+.paper .heading span {
+    color: rgb(6, 88, 6);
+}
+
+.paper .paper-name {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paper .paper-name div {
+    height: 100px;
+    width: 300px;
+    background-color: #ffffffd8;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #bbb9b9;
+    transition: 0.4s;
+}
+
+.paper .paper-name div h1 {
+    font-size: 20px;
+    margin: 30px 40px;
+    color: rgb(9, 70, 9);
+}
+
+.paper .paper-name div:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px dashed rgb(4, 163, 4);
+}
+
+
+
+/*============================projects================================*/
+
+
+
+.projects{
+    width: 100%;
+    height: auto;
+    background-color: #e2dddd;
+    box-shadow: 1px 1px 10px 1px #413f3f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.projects  div{
+    height: 300px ;
+    width: 260px;
+    background-color: #ffffffd8;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    cursor: pointer;
+
+
+}
+.projects div .mdi{
+    font-size: 110px;
+    color: rgb(9, 70, 9);
+    margin-left:80px ;
+}
+.projects div  .heading{
+    font-size: 26px;
+    margin-left:30px ;
+}
+
+.projects  div:hover{
+    background-color: #b9b5b5d8;
+}
+
+
+
+/*=======================================footer===============*/
+
+
+footer {
+    background-color:
+        #e2dddd;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 30px 1px rgb(165, 165, 165);
+    position: relative;
+}
+footer h3{
+    color: rgb(5, 83, 28);
+    font-size: 38px;
+    border-bottom: 2px solid black;
+}
+
+footer .description {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .description h6 {
+    font-weight: 100;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    color: rgb(9, 70, 9);
+}
+
+footer .about ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li {
+    margin: 0px 30px;
+
+}
+
+footer ul li span {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(9, 70, 9);
+}
+
+footer ul li span:hover {
+    color: rgb(16, 116, 16)
+}
+
+footer .copy {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    color: rgb(4, 104, 4);
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+footer .copy {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .copy ul {
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+    cursor: pointer;
+    color: rgb(4, 104, 4);
+}
+
+footer .copy ul li:hover {
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+}
+
+
+
+
+
+/*resposive*/
+
+#bar:checked~.head {
+    margin-left: 0px;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (min-width: 1470px){
+    .question-bank .card .subject .topic {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        
+    }
+    .question-bank .subject .topic div{
+        transform: scale(1.2);
+
+    }
+}
+
+
+
+
+
+
+
+@media(max-width:950px) {
+   header  nav .icon i {
+        display: block;
+        right: 20px;
+    }
+
+   header  nav .sign {
+        display: none;
+    }
+
+   header  nav .head {
+        height: 80px;
+        margin-left: -200%;
+        transition: all linear 0.3s;
+    }
+
+    header nav .logo {
+        position: absolute;
+        left: 20px;
+    }
+
+   header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header nav .head ul li {
+        margin: 30px 0px;
+    }
+
+
+    .container-course .course {
+        width: 100%;
+    }
+
+    .course div {
+        transform: scale(0.8, 0.8);
+
+    }
+
+    .question-bank .heading h1 {
+        margin-left: 50px;
+    }
+
+    .qoutes {
+        display: none;
+    }
+
+    .question-bank .heading {
+        transform: scale(0.7, 0.7);
+    }
+    .paper{
+        height: auto;
+    }
+
+    footer{
+        flex-direction: row;
+      height: 300px;
+      background-color: transparent;
+      box-shadow: none;
+    
+    }
+    footer .description{
+        transform: scale(0.8);
+
+    }
+    footer .description h6{
+ font-size: 13px;
+
+}
+footer .about{
+transform: scale(0.8);
+margin-left: -20px;
+}
+
+}
+@media (max-width: 850px) {
+    .search .slogan p {
+        display: none;
+    }
+
+    .question-bank .heading {
+        margin-left: -40px;
+        height: auto;
+        width: auto;
+    }
+
+    .subject .heading {
+        transform: scale(1.05, 1.05);
+    }
+    footer .description h6{
+display: none;
+    }
+    footer h3{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    footer .copy p{
+        font-size: 10px;
+    }
+    footer .copy ul li{
+        font-size: 10px;
+    }
+    
+}
+
+
+
+@media (max-width: 1290px) {
+    .question-bank {
+ height: auto;
+    }
+    .question-bank .card{
+        height: auto;
+    }
+
+    .question-bank .heading h1 {
+        font-size: 20px;
+    }
+    .projects{
+        height: auto;
+    }
+    .projects div{
+transform: scale(0.8);
+    }
+}
+
+
+@media (max-width: 500px){
+    footer{
+        height:150px;
+    }
+    footer .about ul{
+        transform: scale(0.7);
+    }
+    footer h3{
+        font-size: 10px;
+        margin-left: 140px;
+    }
+}
+
+@media (max-width: 405px) {
+
+    .question-bank .card .subject {
+        width: 300px;
+    }
+
+    .question-bank .card {
+        height: auto;
+    }
+
+    .question-bank {
+        height: auto;
+    }
+    
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../files/sty.css">
+    <link rel="stylesheet" type="text/css" href="../../files/slider.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>php tutorials</title>
+</head>
+
+<body><?php include "../../files/header.php" ?>
+
+    <div class="mainContent">
+        <div class="box">
+
+            <div class="slider">
+                <div class="container">
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>PHP tutorial</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction to PHP</h3>
+                            <h3>data types</h3>
+                            <h3>variable</h3>
+                            <h3>super global variable</h3>
+                            <h3>constant</h3>
+                            <h3>operators</h3>
+                            <h3>regular expression</h3>
+                            <h3>comments</h3>
+                        </div>
+                    </div>
+
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>control statement</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3>if else</h3>
+                            <h3>if elseif else</h3>
+                            <h3>nested if</h3>
+                            <h3>whitch case</h3>
+                            <h3>PHP loops</h3>
+                            <h3>for loop</h3>
+                            <h3>while loop</h3>
+                            <h3>do while loop</h3>
+                            <h3>for each loop</h3>
+                        </div>
+                    </div>
+
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>array</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3>index array</h3>
+                            <h3>associate array</h3>
+                            <h3>multi dimesional array</h3>
+                            <h3>array predefined function</h3>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>function</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3>defining and calling</h3>
+                            <h3>passing by value</h3>
+                            <h3>passing by refrence</h3>
+                            <h3>inbuilt function</h3>
+                            <h3>variable scope</h3>
+                            <h3>mail function</h3>
+                            <h3>PHP errors</h3>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>working with form</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3>method</h3>
+                            <h3>cookies</h3>
+                            <h3>session </h3>
+                            <h3>query string</h3>
+                            <h3>hidden filed</h3>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>working with files</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3>opening and closing file</h3>
+                            <h3> creating directories and files</h3>
+                            <h3> Reading and Writing to Files</h3>
+                            <h3>file inclusion</h3>
+                            <h3>file upload and download</h3>
+                            <h3> Getting Information on Files</h3>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>obeject oriented</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3>class</h3>
+                            <h3>objects</h3>
+                            <h3>access modifiers</h3>
+                            <h3>buliding classes</h3>
+                            <h3>Constructors</h3>
+                            <h3>Destructor.</h3>
+                            <h3>Reusability</h3>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topicHeading">
+                            <h2>Database Connectivity</h2>
+                        </div>
+                        <div class="topicName">
+                            <h3>Introduction</h3>
+                            <h3></h3>
+                            <h3></h3>
+                            <h3></h3>
+                            <h3></h3>
+                            <h3></h3>
+                            <h3></h3>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="main">
+                <div class="heading">
+                    <h1>Introduction to PHP</h1>
+                </div>
+                <div class="defination">
+                    <h4>PHP (Hypertext Preprocessor) is a widely-used server-side scripting language primarily designed
+                        for web development. It is particularly well-suited for creating dynamic web pages and building
+                        web applications. PHP code is embedded within HTML, allowing developers to mix PHP and HTML
+                        seamlessly.</h4>
+                    <h4>
+                        PHP has been widely adopted for web development and powers numerous popular websites and web
+                        applications, including Facebook, WordPress, and Wikipedia. Its ease of use, extensive features,
+                        and large developer community make it a popular choice for building dynamic and interactive web
+                        applications.
+                    </h4>
+
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="heading">
+                    <h1>Key features and characteristics of PHP include:</h1>
+                </div>
+                <div class="defination">
+                    <h4>
+                        <ol>
+                            <li>
+                                Server-side scripting: PHP is executed on the server, generating HTML output that is
+                                sent to the client's web browser. This approach allows for dynamic content generation,
+                                database interactions, and other server-side processing.
+                            </li>
+                            <li>Easy integration: PHP can be embedded directly within HTML code, making it easy to mix
+                                PHP and HTML to create dynamic web pages. This integration facilitates the creation of
+                                reusable templates and simplifies the development process.</li>
+                            <li>Wide platform support: PHP is supported by major operating systems (Windows, Linux,
+                                macOS) and can run on various web servers such as Apache and Nginx. It also integrates
+                                well with databases like MySQL, PostgreSQL, and SQLite.</li>
+                            <li>Extensive community and resources: PHP has a large and active developer community, which
+                                means there is a vast amount of documentation, tutorials, and libraries available. This
+                                makes it easier for developers to find solutions, share knowledge, and leverage existing
+                                code.</li>
+                            <li>Object-oriented programming (OOP) support: PHP supports object-oriented programming
+                                paradigms, allowing developers to write modular, reusable, and organized code. This
+                                approach enhances code maintainability and scalability.</li>
+                            <li>Rich functionality: PHP offers a wide range of built-in functions and libraries for
+                                various tasks, including file handling, database access, form validation, encryption,
+                                and more. These built-in features simplify common web development tasks and reduce the
+                                need for external dependencies.</li>
+                            <li>Easy deployment: PHP applications can be deployed on various web servers with minimal
+                                configuration. PHP is supported by most hosting providers, making it straightforward to
+                                deploy web applications to production environments.</li>
+                        </ol>
+                    </h4>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="main">
+                <div class="heading">
+                    <h1>PHP offers several advantages that make it a popular choice for web development:</h1>
+                </div>
+                <div class="defination">
+                    <h4>
+                        <ol>
+                            <li>Easy to Learn and Use: PHP has a relatively gentle learning curve, especially for developers already familiar with C-style languages. Its syntax is similar to languages like C, Java, and JavaScript. Additionally, PHP integrates seamlessly with HTML, making it straightforward to mix PHP code with markup. This ease of use allows developers to quickly start building web applications.</li>
+                            <li>Large Community and Extensive Documentation: PHP has a vast and active developer community. This means there is a wealth of online resources, tutorials, forums, and libraries available to assist developers. The extensive documentation makes it easy to find solutions to common problems, troubleshoot issues, and stay up-to-date with the latest features and best practices.</li>
+                            <li>Cross-Platform Compatibility: PHP is supported on major operating systems like Windows, Linux, and macOS. It can run on various web servers such as Apache, Nginx, and Microsoft IIS. This cross-platform compatibility ensures that PHP applications can be easily deployed and hosted on different systems.</li>
+                            <li>Wide Hosting Support: Most web hosting providers offer PHP support, making it easy to find hosting options for PHP-based websites and applications. This widespread hosting support reduces deployment complexities and allows developers to choose from a range of hosting providers at competitive prices.</li>
+                            <li>Rapid Development: PHP's simplicity and extensive libraries accelerate the development process. The language provides built-in functions and features for common web development tasks, such as database access, file handling, and form validation. This reduces the need for writing code from scratch, enabling developers to build applications faster and more efficiently.</li>
+                            <li>Scalability: PHP can handle high traffic volumes and scale effectively. It integrates well with popular databases like MySQL, PostgreSQL, and SQLite, allowing for efficient data retrieval and storage. Additionally, PHP can be deployed on clustered servers or cloud infrastructure to handle increased demand and ensure application availability.</li>
+                            <li>Flexibility and Integration: PHP is highly flexible and can be integrated with various technologies and frameworks. It works well with HTML, CSS, JavaScript, and other web technologies, allowing developers to build full-featured web applications. Additionally, PHP can be used in conjunction with frameworks like Laravel, Symfony, and CodeIgniter, which provide additional features and development tools.</li>
+                            <li>Cost-effective: PHP is an open-source language, which means it is free to use and distribute. This reduces development costs, making it an attractive option for businesses and developers working on a budget. Additionally, the availability of numerous open-source PHP libraries and frameworks further contributes to cost savings.</li>
+                    </h4>
+                    <h4>
+                        Overall, PHP's simplicity, extensive community support, cross-platform compatibility, and rapid development capabilities make it a favorable choice for web development projects of varying sizes and complexities.
+                    </h4>
+
+                </div>
+            </div>
+            <?php include "../../files/footer.php" ?>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

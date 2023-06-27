@@ -1,0 +1,49 @@
+.slider {
+    width: 26%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e1e0e0;
+    overflow-y: auto;
+    padding-top: 20px;
+    
+
+}
+.slider .container{
+margin-top: 100px;
+}
+.slider .topic .topicHeading {
+    color: rgb(6, 61, 6);
+}
+
+.slider .topic .topicName h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+
+}
+
+.slider .topic .topicName h3 {
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.slider .topic .topicName h3:hover {
+    transition: all linear 0.2s;
+    background-color: #b5adad;
+}
+
+.slider .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}

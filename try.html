@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <style>
+        /* Add some basic styling to the BMI calculator */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #calculator {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .result {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div id="calculator">
+        <div class="input-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" min="0">
+        </div>
+        <div class="input-group">
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" min="0">
+        </div>
+        <button id="calculate-btn">Calculate BMI</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script >
+        const calculateBtn = document.getElementById('calculate-btn');
+        const weightInput = document.getElementById('weight');
+        const heightInput = document.getElementById('height');
+        const resultDiv2 = document.getElementById('result');
+
+        // Function to calculate the BMI
+        function calculateBMI() {
+            const weight = parseFloat(weightInput.value);
+            const height = parseFloat(heightInput.value) / 100; // Convert height to meters
+
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                resultDiv2.textContent = 'Invalid input';
+                return;
+            }
+
+            const bmi = weight / (height * height);
+            const bmiRounded = bmi.toFixed(1);
+
+            let bmiCategory = '';
+
+            if (bmi < 18.5) {
+                bmiCategory = 'Underweight';
+            } else if (bmi >= 18.5 && bmi < 25) {
+                bmiCategory = 'Normal weight';
+            } else if (bmi >= 25 && bmi < 30) {
+                bmiCategory = 'Overweight';
+            } else {
+                bmiCategory = 'Obese';
+            }
+
+            resultDiv2.textContent = `BMI: ${bmiRounded} (${bmiCategory})`;
+        }
+
+        // Event listener for the calculate button
+        calculateBtn.addEventListener('click', calculateBMI);
+
+    </script>
+</body>
+</html>
+
+    
+                            
